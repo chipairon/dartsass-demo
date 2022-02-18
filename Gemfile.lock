@@ -1,4 +1,12 @@
 GIT
+  remote: https://github.com/chipairon/dartsass-rails.git
+  revision: 292cd48370a8e9b726c3698a157b2bcffff81d25
+  branch: add-app-asssets-to-load-paths
+  specs:
+    dartsass-rails (0.2.0)
+      railties (>= 6.0.0)
+
+GIT
   remote: https://github.com/rails/sprockets.git
   revision: 4aa1c55e66463f982c05cc85b94375be52d0d3f9
   branch: master
@@ -75,16 +83,22 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
+    autoprefixer-rails (10.4.2.0)
+      execjs (~> 2)
+    bootstrap (5.1.3)
+      autoprefixer-rails (>= 9.1.0)
+      popper_js (>= 2.9.3, < 3)
+      sassc-rails (>= 2.0.0)
     builder (3.2.4)
     concurrent-ruby (1.1.9)
     crass (1.0.6)
-    dartsass-rails (0.2.0)
-      railties (>= 6.0.0)
     debug (1.4.0)
       irb (>= 1.3.6)
       reline (>= 0.2.7)
     digest (3.1.0)
     erubi (1.10.0)
+    execjs (2.8.1)
+    ffi (1.15.5)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.10.0)
@@ -122,6 +136,7 @@ GEM
     nokogiri (1.13.1)
       mini_portile2 (~> 2.7.0)
       racc (~> 1.4)
+    popper_js (2.9.3)
     puma (5.6.2)
       nio4r (~> 2.0)
     racc (1.6.0)
@@ -157,12 +172,21 @@ GEM
     rake (13.0.6)
     reline (0.3.1)
       io-console (~> 0.5)
+    sassc (2.4.0)
+      ffi (~> 1.9)
+    sassc-rails (2.1.2)
+      railties (>= 4.0.0)
+      sassc (>= 2.0)
+      sprockets (> 3.0)
+      sprockets-rails
+      tilt
     sprockets-rails (3.4.2)
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
     strscan (3.0.1)
     thor (1.2.1)
+    tilt (2.0.10)
     timeout (0.2.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
@@ -175,7 +199,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  dartsass-rails
+  bootstrap
+  dartsass-rails!
   debug
   puma (~> 5.0)
   rails (~> 7.0.2, >= 7.0.2.2)

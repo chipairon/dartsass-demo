@@ -18,9 +18,10 @@ gem "puma", "~> 5.0"
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
-gem 'dartsass-rails'
-# gem 'dartsass-rails', git: 'https://github.com/chipairon/dartsass-rails.git', branch: 'configurable-load-paths'
+gem 'dartsass-rails', git: 'https://github.com/chipairon/dartsass-rails.git', branch: 'add-app-asssets-to-load-paths'
 # gem 'dartsass-rails', path: '../dartsass-rails'
+
+gem 'bootstrap'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
